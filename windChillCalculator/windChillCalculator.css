@@ -1,0 +1,50 @@
+/* CSS declarations go here */
+
+
+#windChillWidget {
+  width: 240px;
+  font-family: tahoma;
+  font-size: 14px;
+  border: 1px solid black;
+  padding: 5px;
+  /* background-color: #cdcdab; */
+  background: linear-gradient(127deg, #cdcdab 30%, #989877 70%);
+  border-radius: 7px;
+}
+
+#windChillWidget h1 {
+    font-size: 1.3em;
+}
+
+#windChillWidget h2 {
+    font-size: .88em;
+    line-height: 16px;
+    margin: 5px 0 0 0;
+}
+
+#results {
+    text-align: center;
+}
+
+#calculator {
+  border: 2px inset #cdcdab;
+  background-color: #e5e5e5;
+  border-radius: 18px;
+}
+
+#windSlider, #tempSlider {
+  border: 3px inset #dfdfe1;
+}
+
+.ui-slider {
+  background: ;
+}
+
+.scaleToggle {
+  margin-top: 10px;
+  margin-left: 5px;
+  width: 30px;
+  display: block;
+  border: 2px inset #cdcdab;
+}
+

@@ -1,0 +1,47 @@
+<head>
+  <meta  charset="utf-8" />
+  <title>windChillCalculator</title>
+  <!--[if lt IE 9]>    script to "create" HTML5 tags IE doesn't know about
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div id="windChillWidget">
+    {{> windChillCalculator}}
+    {{> windSpeedControl}}
+    {{> tempControl}}
+  </div>
+  <div>
+      Built with Meteor.
+  </div>
+</body>
+
+<template name="windChillCalculator">
+<div id="instructions">
+<h1>Wind Chill Calculator</h1>
+
+</div>
+<div id="results">
+  <canvas id="calculator" width="220" height="64"></canvas>
+</div>
+
+    {{invokeAfterLoad}}
+</template>
+
+<template name="windSpeedControl">
+  <div id="windSpeedControl">
+    <h2>Wind Speed</h2>
+    <div id="windSlider"></div>
+  </div>
+</template>
+<template name="tempControl">
+  <div id="tempControl">
+    <h2>Temperature</h2>
+    <div id="tempSlider"></div>
+    
+    <div><span class="scaleToggle" id="tempScale"></span></div>
+    <h2>F&lt;&gt;C</h2>
+  </div>
+</template>
+
